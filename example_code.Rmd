@@ -1,0 +1,14 @@
+---
+title: "example R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+economics_long %>%
+  ggplot(aes(date, value01)) + 
+  geom_line(aes(color = variable))
+```
